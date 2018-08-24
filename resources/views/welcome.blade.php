@@ -72,6 +72,7 @@
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('custom_data') }}">Custom Data</a>
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
@@ -89,6 +90,8 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                <div id="example"></div>
+                <script src="{{mix('js/app.js')}}" ></script>
             </div>
         </div>
     </body>
