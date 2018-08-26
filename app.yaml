@@ -19,7 +19,7 @@ env_variables:
   DB_HOST: localhost
   DB_DATABASE: CloudKickers
   DB_USERNAME: CloudKickers
-  DB_PASSWORD: secret
+  DB_PASSWORD: FIT5120Team03
   DB_SOCKET: "/cloudsql/cloudkickers02-214411:australia-southeast1:cloudkickers"
 
 beta_settings:
