@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\CustomData;
+use Illuminate\Support\Facades\DB;
 
 
 class ShowProfile extends Controller
@@ -20,7 +20,7 @@ class ShowProfile extends Controller
     }
     public function index(Request $request)
     {
-        $custom_data = CustomData::all();
+        $custom_data = DB::table('custom_data')->get();
         return view('custom_data',["custom_data" => $custom_data]);
     }
 }

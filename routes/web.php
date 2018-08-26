@@ -19,3 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/custom_data', 'ShowProfile@index')->name('custom_data');
+Route::get('/test', 'TestController@index')->name('test');
+Route::get('/question', 'QuestionsController@index')->name('question');

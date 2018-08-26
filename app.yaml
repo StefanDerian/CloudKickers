@@ -11,5 +11,18 @@ skip_files:
 env_variables:
   # Put production environment variables here.
   APP_LOG: errorlog
-  APP_KEY: base64:VcwqLX3u9As4Iq/iI2TAIx1Nb8AfDEBO4pVibdemCg4=
+  APP_KEY: base64:x3lYSkRpq/krChl7UIsLP4CU9HMtrmr8gCzWjEyZiEk=
   STORAGE_DIR: /tmp
+  SESSION_DRIVER: database
+  CACHE_DRIVER: database
+  ## Set these environment variables according to your CloudSQL configuration.
+  DB_HOST: localhost
+  DB_DATABASE: CloudKickers
+  DB_USERNAME: CloudKickers
+  DB_PASSWORD: secret
+  DB_SOCKET: "/cloudsql/cloudkickers02-214411:australia-southeast1:cloudkickers"
+
+beta_settings:
+    # for Cloud SQL, set this value to the Cloud SQL connection name,
+    # e.g. "project:region:cloudsql-instance"
+    cloud_sql_instances: "cloudkickers02-214411:australia-southeast1:cloudkickers"
